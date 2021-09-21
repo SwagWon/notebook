@@ -1,0 +1,69 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{multicol}
+\usepackage{multicap}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
+
+\newenvironment{define}{
+    \textbf{Define: }
+}{\par}
+
+\newenvironment{property}{
+    \textbf{Property: }
+}{\par}
+
+\newenvironment{theorem}{
+    \textbf{Theorem: }
+}{\par}
+
+\newenvironment{proof}{
+    \textbf{Proof: }
+}{\par}
+
+\newenvironment{principle}{
+    \textbf{Principle: }
+}{\par}
+
+\setlength{\textwidth}{474pt}
+\setlength{\oddsidemargin}{-7pt}
+
+\title{VectorAnalysis}
+\author{S.J. Wang}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+    A brief introduction to vector analysis for physics students, lacking precise mathematical proof.
+
+    \newpage
+
+    \tableofcontents
+
+    \newpage
+
+    \section{Vector Algebra}
+    \subsection{Tri-vector mixed product}
+
+    Tri-vector mixed product contains dot product(inner product) and cross product (outer product) among three vectors. The result is a scalar.
+
+    \define{for vectors $\vec{a},\vec{b}$ and $\vec{c}$, the mixed product is
+    \begin{equation}
+        \vec{c}\cdot(\vec{a}\times \vec{b})
+    \end{equation}
+    }
+
+    The result of $\vec{c}\cdot(\vec{a}\times \vec{b})$ equals to the volume of a parallelepiped defined with these 3 vectors. Hence when the order of $\vec{a},\vec{b}, \vec{c}$ doesn't change, the result is fixed. If the order of 2 vectors is changed, the result counter sign.
+
+    \property{for mixed product:
+    \begin{equation}
+        \vec{a}\cdot(\vec{b}\times\vec{c}) = \vec{b}\cdot(\vec{c}\times\vec{a}) = \vec{c}\cdot(\vec{a}\times \vec{b}) = -\vec{a}\cdot(\vec{c}\times\vec{b})
+    \end{equation}
+    }
+
+    
+
+\end{document}
